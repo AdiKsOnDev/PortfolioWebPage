@@ -1,8 +1,11 @@
 import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
+import { DataBaseConnect } from "./DataBaseConnect";
 
 dotenv.config();
+DataBaseConnect();
+
 const app = express();
 const port = process.env.PORT || 5000; 
 
