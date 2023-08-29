@@ -13,12 +13,31 @@ const ProjectSchema = new mongoose.Schema ({
         type: String,
         required: true,
     },
-    githubRepo: {
+    gitRepo: {
         type: String,
         required: true,
     },
 });
 
-const Project = mongoose.model("Project", ProjectSchema);
+const ReviewSchema = new mongoose.Schema ({
+    email: {
+        type: String,
+        required: true,
+    },
+    name: {
+        type: String,
+        required: true,
+    },
+    review: {
+        type: String,
+        required: true,
+    },
+})
 
-export default Project;
+const Project = mongoose.model("Project", ProjectSchema);
+const Review = mongoose.model("Review", ReviewSchema);
+
+export {
+    Project,
+    Review
+};
