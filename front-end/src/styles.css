@@ -6,3 +6,15 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
+
+.w-128 {
+    width: 32rem;
+}
+
+.top-55-p {
+    top: 55%;
+}
+
+.right-53-p {
+    right: 53%;
+}
