@@ -3,7 +3,7 @@ import Profile from "./Profile";
 
 function Header() {
     return ( 
-        <div className="flex flex-col w-screen h-10">
+        <div className="flex flex-col w-screen">
             <Navbar />
             <Profile />
         </div>
