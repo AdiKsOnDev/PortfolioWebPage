@@ -1,7 +1,11 @@
+import Navbar from "./Navbar";
+import Profile from "./Profile";
+
 function Header() {
     return ( 
-        <div className="w-screen h-10">
-            <h1>Hi</h1>
+        <div className="flex flex-col w-screen h-10">
+            <Navbar />
+            <Profile />
         </div>
     );
 }
