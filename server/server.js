@@ -4,18 +4,22 @@ import cors from "cors";
 import { DataBaseConnect } from "./DataBaseConnect.js";
 import { Project } from "./Models.js";
 import { Review } from "./Models.js";
+import path from "path";
 
 dotenv.config();
 DataBaseConnect();
 
 const app = express();
-const port = process.env.PORT || 5000; 
+const port = process.env.PORT || 5000;
+
+// Serve static files from the React app build directory
+app.use(express.static(path.join("../front-end/", 'build')));
 
 app.use(express.json());
 app.use(cors({ origin: `${process.env.CLIENT_URL}` }));
 
 app.get("/", async(req, res) => {
-    res.send("Connected")
+    res.sendFile(path.join("../front-end/", 'build', 'index.html'));
 });
 
 app.get("/projects", async(req, res) => {
