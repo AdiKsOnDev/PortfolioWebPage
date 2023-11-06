@@ -20,7 +20,7 @@ function Projects() {
                 Projects
             </h1>
 
-            <div className="grid grid-container">
+            <div className="grid grid-container px-12">
                 {projects.map((project) => (
                     <Project
                         key={project.title}
@@ -32,11 +32,6 @@ function Projects() {
             </div>
         </div>
     );
-}
-
-async function getProjects() {
-    const projectsJSON = await fetch("http://localhost:5000/projects");
-    return projectsJSON;
 }
 
 export default Projects;
