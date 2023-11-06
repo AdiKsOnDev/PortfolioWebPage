@@ -2,9 +2,9 @@ import ProfilePic from "../Assets/pfp.jpg"
 
 function Profile() {
     return ( 
-        <div className="flex flex-row">
+        <div className="flex flex-col justify-between h-screen">
             <div className="flex flex-row items-center absolute w-full top-1/4 z-10">
-                <div className="w-48"></div>
+                <div className="w-40"></div>
                 <img alt="profile-pic" src={ProfilePic} className="rounded-full w-1/4" />
                 <h1 className="text-5xl text-tertiary font-semibold ml-10 mt-10">Adil Alizada</h1>
             </div>
