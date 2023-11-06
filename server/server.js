@@ -31,18 +31,40 @@ app.get("/projects", async(req, res) => {
     }
 });
 
+// app.post("/", async(req, res) => {
+//     try {
+//         const {email, name, review} = req.body;
+//         const newReview = {
+//             email,
+//             name,
+//             review,
+//         };
+
+//         if (newReview) {
+//             const review = await Review.create(newReview);
+//             res.status(201).json(review);
+//         }
+//     } catch (error) {
+//         res.status(404).json({
+//             message: "Sorry, something is wrong with your data.",
+//             err: error.message
+//         });
+//     }
+// })
+
 app.post("/", async(req, res) => {
     try {
-        const {email, name, review} = req.body;
-        const newReview = {
-            email,
-            name,
-            review,
+        const {image, title, description, gitRepo} = req.body;
+        const newProject = {
+            image,
+            title,
+            description,
+            gitRepo,
         };
 
-        if (newReview) {
-            const review = await Review.create(newReview);
-            res.status(201).json(review);
+        if (newProject) {
+            const project = await Project.create(newProject);
+            res.status(201).json(project);
         }
     } catch (error) {
         res.status(404).json({
