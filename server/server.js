@@ -2,7 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import { DataBaseConnect } from "./DataBaseConnect.js";
-import { Project } from "./Models.js";
+import { About, Project } from "./Models.js";
 import { Review } from "./Models.js";
 import path from "path";
 
@@ -26,6 +26,15 @@ app.get("/projects", async(req, res) => {
     try {
         const projects = await Project.find({}).sort({ _id: -1 });
         res.status(200).json(projects);
+    } catch (error) {
+        res.status(404).json({ msg: "Data could not be found." });
+    }
+});
+
+app.get("/about", async(req, res) => {
+    try {
+        const about = await About.find({}).sort({ _id: -1 });
+        res.status(200).json(about);
     } catch (error) {
         res.status(404).json({ msg: "Data could not be found." });
     }

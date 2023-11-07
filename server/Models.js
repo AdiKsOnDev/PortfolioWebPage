@@ -34,10 +34,19 @@ const ReviewSchema = new mongoose.Schema ({
     },
 })
 
+const AboutSchema = new mongoose.Schema ({
+    description: {
+        type: String,
+        required: true,
+    },
+})
+
 const Project = mongoose.model("Project", ProjectSchema);
 const Review = mongoose.model("Review", ReviewSchema);
+const About = mongoose.model("About", ReviewSchema);
 
 export {
     Project,
-    Review
+    Review,
+    About
 };
