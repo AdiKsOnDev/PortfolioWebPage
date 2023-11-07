@@ -1,8 +1,12 @@
+import About from "./About";
 import Projects from "./Projects";
 
 function Body() {
     return ( 
-        <Projects />
+        <div>
+            <Projects />
+            <About />
+        </div>
     );
 }
 
