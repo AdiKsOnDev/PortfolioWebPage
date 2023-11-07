@@ -43,7 +43,7 @@ const AboutSchema = new mongoose.Schema ({
 
 const Project = mongoose.model("Project", ProjectSchema);
 const Review = mongoose.model("Review", ReviewSchema);
-const About = mongoose.model("About", ReviewSchema);
+const About = mongoose.model("About", AboutSchema);
 
 export {
     Project,
