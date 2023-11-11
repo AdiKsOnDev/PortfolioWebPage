@@ -27,6 +27,7 @@ function Projects() {
                         image={project.image}
                         name={project.title}
                         description={project.description}
+                        gitRepo={project.gitRepo}
                     />
                 ))}
             </div>

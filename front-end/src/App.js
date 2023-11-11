@@ -1,12 +1,12 @@
 import './styles.css';
 
-// Components
+// React Components
 import Header from './components/Header';
 import Body from './components/Body';
 
 function App() {
   return (
-    <div className="h-full min-h-screen w-screen bg-primary">
+    <div className="h-full min-h-screen bg-primary">
       <Header />
       <Body />
     </div>

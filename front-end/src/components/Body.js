@@ -3,7 +3,7 @@ import Projects from "./Projects";
 
 function Body() {
     return ( 
-        <div>
+        <div className="max-w-screen">
             <Projects />
             <About />
         </div>
