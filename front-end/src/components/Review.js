@@ -11,7 +11,7 @@ function Review() {
     };
 
     return (
-        <div className="w-full flex flex-col justify-center items-center p-24">
+        <div className="w-full flex flex-col justify-center items-center p-48">
             <h1 className="Review text-tertiary font-semibold text-5xl mb-5">Leave a Review</h1>
             
             <form className="flex flex-col justify-center items-center w-full bg-secondary rounded-2xl p-12" onSubmit={handleSubmit}>
@@ -21,7 +21,7 @@ function Review() {
 
                 <textarea className='w-full rounded-md shadow-secondary shadow-inner px-5 py-2 h-48 mb-5' value={description} placeholder='Description' onChange={(e) => setDescription(e.target.value)} />
 
-                <button type="submit">Submit</button>
+                <button className='bg-grass px-5 py-2 font-semibold text-tertiary rounded-lg' type="submit">Submit</button>
             </form>
         </div>
     );

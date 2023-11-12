@@ -10,6 +10,7 @@ module.exports = {
         'secondary': '#1E1E1E',
         'tertiary':'#ECEBEB',
         'accent':'#ADFDF6',
+        'grass':'#238636',
       }
     },
   },  
