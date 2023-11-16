@@ -14,7 +14,7 @@ function About() {
     }, []);
 
     return ( 
-        <div className="flex flex-col items-center justify-center mt-10">
+        <div className="flex flex-col items-center justify-center mt-48">
             <h1 id="About" className="font-semibold text-5xl text-tertiary">
                 About Me
             </h1>

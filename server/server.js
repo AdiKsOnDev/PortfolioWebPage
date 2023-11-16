@@ -10,6 +10,8 @@ dotenv.config();
 DataBaseConnect();
 
 const app = express();
+app.use(express.json());
+
 const port = process.env.PORT || 5000;
 
 // Serve static files from the React app build directory
