@@ -1,12 +1,15 @@
 import Project from "./Project";
 import { useState, useEffect } from "react";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 function Projects() {
     const [projects, setProjects] = useState([]);
 
     useEffect(() => {
         async function fetchProjects() {
-            const response = await fetch("http://localhost:5000/projects");
+            const response = await fetch(process.env.CLIENT_URL + "/projects");
             const data = await response.json();
             setProjects(data);
         }

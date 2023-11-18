@@ -5,7 +5,7 @@ function About() {
 
     useEffect(() => {
         async function fetchAbout() {
-            const response = await fetch("http://localhost:5000/about");
+            const response = await fetch(process.env.CLIENT_URL + '/about');
             const data = await response.json();
             setAboutInfo(data[0].description);
         }
