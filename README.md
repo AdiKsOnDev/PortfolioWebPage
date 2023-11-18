@@ -1,5 +1,4 @@
 # 🌟 Portfolio Website README
-## 📋 Overview
 This portfolio website is built using the **MERN stack (MongoDB, ExpressJS, ReactJS, NodeJS)** with **RESTful API** to showcase projects, and reviews of people who worked with me. The site is designed to offer a user-friendly experience and easy navigation.
 
 ## ✨ Features
