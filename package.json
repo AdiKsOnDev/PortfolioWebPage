@@ -4,6 +4,7 @@
   "description": "This portfolio website is built using the **MERN stack (MongoDB, ExpressJS, ReactJS, NodeJS)** with **RESTful API** to showcase projects, and reviews of people who worked with me. The site is designed to offer a user-friendly experience and easy navigation.",
   "main": "server/server.js",
   "scripts": {
+    "build": "cd front-end && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
