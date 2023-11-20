@@ -1,4 +1,7 @@
 import { useState, useEffect } from 'react';
+import dotenv from "dotenv";
+
+dotenv.config();
 
 function About() {
     const [aboutInfo, setAboutInfo] = useState('');
