@@ -15,13 +15,13 @@ app.use(express.json());
 const port = process.env.PORT || 3000;
 
 // Serve static files from the React app build directory
-app.use(express.static(path.join("../front-end/", 'build')));
+app.use(express.static(path.join("front-end/", 'build')));
 
 app.use(express.json());
 app.use(cors({ origin: `${process.env.CLIENT_URL}` }));
 
 app.get("/", async(req, res) => {
-    res.sendFile(path.join("../front-end/", 'build', 'index.html'));
+    res.sendFile('index.html', { root: "front-end/build" });
 });
 
 app.get("/projects", async(req, res) => {
