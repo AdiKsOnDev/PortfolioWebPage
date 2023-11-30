@@ -12,7 +12,7 @@ DataBaseConnect();
 const app = express();
 app.use(express.json());
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 
 // Serve static files from the React app build directory
 app.use(express.static(path.join("../front-end/", 'build')));
