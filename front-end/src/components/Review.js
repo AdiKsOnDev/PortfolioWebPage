@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-import dotenv from "dotenv";
-
-dotenv.config();
 
 function Review() {
     const [email, setEmail] = useState('');
@@ -16,7 +13,7 @@ function Review() {
             "review": description
         };
         console.log("SENDING --> " + JSON.stringify(data))
-        const response = await fetch(process.env.CLIENT_URL, {
+        const response = await fetch("/", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

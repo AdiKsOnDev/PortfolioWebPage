@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react';
-import dotenv from "dotenv";
+// import dotenv from "dotenv";
 
-dotenv.config();
+// dotenv.config();
 
 function About() {
     const [aboutInfo, setAboutInfo] = useState('');
 
     useEffect(() => {
         async function fetchAbout() {
-            const response = await fetch(process.env.CLIENT_URL + '/about');
+            const response = await fetch('/about');
             const data = await response.json();
             setAboutInfo(data[0].description);
         }
