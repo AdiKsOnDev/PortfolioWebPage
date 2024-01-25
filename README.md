@@ -13,7 +13,7 @@ This portfolio website is built using the **MERN stack (MongoDB, ExpressJS, Reac
 4. **Make a build folder:** `cd` into `front-end` directory and run `npm run build`
 5. **Start the Server:** Run npm start in the root directory to start the server and the client concurrently.
 
-## 🚀 Deployment (Under development)
+## 🚀 Deployment
 This website is automatically deployed to Heroku upon changes pushed to the main branch on Github. CI/CD is managed using Github Actions.
 
 ## 🤝 Contributing
